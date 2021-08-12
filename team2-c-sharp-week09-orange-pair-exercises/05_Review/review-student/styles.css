@@ -1,0 +1,147 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #87CEEB;
+}
+
+nav ul {
+    margin: 0;
+    padding: 20px 0 0 0;
+}
+
+nav ul li {
+    list-style: none;
+    width: 30%;
+    background-color: #00afef;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 50px;
+}
+
+header img {
+    height: 100px;
+    width: auto;
+}
+header h1 {
+    padding-left: 20px;
+    padding-top: 10px;
+}
+
+main img {
+    object-fit: cover;
+    margin-right: 20px;
+    height: 350px;
+    width: 35%;
+}
+
+main li:before {
+    content: '🍡';
+    margin-left: -31px;
+    padding-right: 8px;
+}
+
+main, section, footer {
+    background-color: #ffffff;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.store-button { /* used for store link in "Get refreshed" section */
+    width: 25%;
+    padding: 10px;
+    border-radius: 5px;
+    color: #000000;
+    background-color: #00afef;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+body {
+    gap: 6px;
+    margin: 8px 20px;
+}
+
+nav li a {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+main#contact-us div {
+    padding-top: 20px;
+}
+main#contact-us label {
+    display: block;
+    padding-bottom: 5px;
+}
+main#contact-us input {
+    height: 25px;
+    width: 300px;
+}
+main#contact-us select {
+    height: 30px;
+    width: 307px;
+}
+main#contact-us input[type="submit"] {
+    height: 40px;
+    width: 200px;
+    background-color: #00afef;
+    color: #ffffff;
+    border: #00afef;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+main li {
+    list-style: none;
+    margin-bottom: 8px;
+}
+
+section {
+    line-height: 24px;
+}
+
+a {
+    color: #000000;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ffffff;
+}
+
+body{
+    display: grid;
+    grid-template-columns: auto auto ;
+    grid-template-areas: 
+        "header nav"
+        "main main"
+        "race store"
+        "footer footer"
+        ;
+
+}
+
+header{
+    grid-area: header;
+}
+
+nav{
+    grid-area: nav;
+}
+
+main{
+    grid-area: main;
+}
+
+#race{
+    grid-area: race;
+}
+
+#store{
+    grid-area: store;
+}
+
+footer{
+    grid-area: footer;
+}
